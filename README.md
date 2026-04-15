@@ -5,10 +5,16 @@ Loading bar
 
 its a simple loading bar i learned to make in css and java.
 its the first time i made it, and learned how it works.
+It was fun maing it.
 
 
 
 
+
+languages used :
+HTML
+CSS
+JAVASCRIPT
 
 
 author
