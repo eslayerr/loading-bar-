@@ -1,11 +1,11 @@
-var fill = document.getElementById("fill");
-var pct = document.getElementById("pct");
-var status = document.getElementById("status");
-var doneMsg = document.getElementById("done-msg");
-var label = document.getElementById("label");
+var greenBar = document.getElementById("greenBar");
+var nn = document.getElementById("nn");
+var txt = document.getElementById("txt");
+var yay = document.getElementById("yay");
+var lbl = document.getElementById("lbl");
 
 
-var messages = [
+var arr = [
     "getting shit done",
     "Loading assets",
     "Fetching",
@@ -14,38 +14,38 @@ var messages = [
 
 ];
 
-var current = 0;
-var timer = null;
+var n = 0;
+var myTimer = null;
 
-run() ;
+doThing() ;
 
-function run(){
-    timer = setInterval(function(){
-        var jump = Math.floor(Math.random()*3)+1;
-        current =Math.min(100, current+jump);
-
-
-        fill.style.width = current + "%";
-        pct.innerText= current+"%";
-        status.innerText = messages[Math.floor(current / 20)] || messages[4];
+function doThing(){
+    myTimer = setInterval(function(){
+        var x = Math.floor(Math.random()*3)+1;
+        n =Math.min(100, n+x);
 
 
-        if (current >= 100){
-            clearInterval(timer);
-            status.innerText=" ";
-            doneMsg.classList.add("show")
+        greenBar.style.width = n + "%";
+        nn.innerText= n+"%";
+        txt.innerText = arr[Math.floor(n / 20)] || arr[4];
+
+
+        if (n >= 100){
+            clearInterval(myTimer);
+            txt.innerText=" ";
+            yay.classList.add("show")
         }
     }, 40);
 }
 
 
 function restart(){
-    current = 0;
-    fill.style.width ="0%";
-    pct.innerText = "0%";
-    label.innerText = "Initializing...";
-    status.innerText = "Gettin shit done";
-    doneMsg.classList.remove("show");
-    clearInterval(timer);
-    run();
+    n = 0;
+    greenBar.style.width ="0%";
+    nn.innerText = "0%";
+    lbl.innerText = "Initializing...";
+    txt.innerText = "Gettin shit done";
+    yay.classList.remove("show");
+    clearInterval(myTimer);
+    doThing();
 }

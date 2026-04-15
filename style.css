@@ -3,39 +3,39 @@
  
  * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+      padding: 0;
+       box-sizing: border-box;
+       font-family: 'Inter', sans-serif;
 
 }
 body{
-    background: #0d0d0d;
+      background: #0d0d0d;
     display: flex;
-    justify-content: center;
+      justify-content: center;
     align-items: center;
-    font-family: 'Inter', sans-serif;
+       font-family: 'Inter', sans-serif;
     height:100vh;
 }
 
-.wrapper{
+.outer{
     padding: 25px;
-    display: flex;
+      display: flex;
     justify-content: center;
-    width:100%;
+      width:100%;
 }
 
 
-.box{
+.myBox{
 
 
     background: #161616;
-    border: 1px solid #2a2a2a;
+      border: 1px solid #2a2a2a;
     border-radius: 20px;
-    padding: 40px 44px;
+       padding: 40px 44px;
     width: 480px;
 }
 
-.top-label {
+.theLabel {
     font-size: 12px;
     font-weight: 500;
     color: #555;
@@ -45,23 +45,23 @@ body{
 }
 
 
-.bar-area{
+.barDiv{
     display: flex;
-    gap: 14px;
-    align-items: center;
+      gap: 14px;
+      align-items: center;
     margin-bottom: 12px;
 }
 
-.bg-bar{
-    background:#232323;
+.grayBar{
+           background:#232323;
     border-radius: 99px;
-    height: 6px;
+      height: 6px;
     flex:1 ;
     overflow:hidden;
 }
 
 
-.fg-bar{
+.actualBar{
     background: linear-gradient(90deg, #ff4500, #ff7043);
     height: 100%;
     border-radius: 99px;
@@ -72,7 +72,7 @@ body{
 
 
 
-.pct-text {
+.numm {
     font-size: 13px;
     font-weight: 600;
     color: #fff;
@@ -84,36 +84,36 @@ body{
 
 .status-text {
     font-size: 13px;
-    color: #444;
+      color: #444;
     min-height: 18px;
 
 }
 
 
-.done-text {
+.doneDiv {
     font-size: 22px;
     color: #ff6030;
-    min-height: 26px;
-    opacity: 0;
-    font-weight: 600;
+      min-height: 26px;
+      opacity: 0;
+      font-weight: 600;
     transition: opacity 0.3s ease,transform 0.5s ease;
     transform: translateY(5px);
 }
 
-.done-text.show {
+.doneDiv.show {
     opacity: 1;
     transform: translateY(0);
 }
 
-.restart-btn {
+.btn {
     margin-top: 26px;
     width: 100%;
     padding: 10px 0;
-    background: transparent;
-    color: #555;
-    border: 1px solid #2a2a2a;
-    border-radius: 10px;
-    cursor: pointer;
+      background: transparent;
+      color: #555;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      cursor: pointer;
     font-size: 13px;
     font-family: 'Inter', sans-serif;
     transition: background 0.2s, color 0.2s, border-color 0.2s;
@@ -130,6 +130,7 @@ body{
 
     transform: scale(0.98);
 }   
+
 
 
 
