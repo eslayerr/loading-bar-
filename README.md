@@ -1,25 +1,15 @@
 # loading-bar-
-loading bar
+Loading bar 
 
-simple loading bar project
 
-shows progress while something is loading
 
-usage
+its a simple loading bar i learned to make in css and java.
+its the first time i made it, and learned how it works.
 
-run the project
 
-see loading bar move
 
-features
 
-simple and clean
-easy to use
-lightweight
 
-tech
-
-html css js
 
 author
 
